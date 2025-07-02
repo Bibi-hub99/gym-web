@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Muscle Matters</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./styles/shared-style.css">
+
+        <script src="https://kit.fontawesome.com/a2dd159b70.js" crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Italianno&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Pathway+Gothic+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <section id="slide-menu">
+            <button id="close-btn"><i class="fa-solid fa-xmark"></i></button>
+            <form autocomplete="off">
+                <input type="text" name="search-links"  placeholder="Search..." id="search-link-input" onkeyup="searchResults()">
+                <ul id="search-links">
+
+                    <li><a href="">Mission</a></li>
+                    <li><a href="">Vision</a></li>
+                    <li><a href="">Prices</a></li>
+                    <li><a href="">Founder</a></li>
+                    <li><a href="">Headquarters</a></li>
+                    <li><a href="">Plans</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Locations</a></li>
+                    <li><a href="">About</a></li>
+
+                </ul>
+            </form>
+        </section>
+
+        <div class="web-layout">
+
+            <div class="header-container" id="header-container">
+
+                <header id="header-cont-1">
+
+                    <div id="header-cont-1-left">
+                        <h2>Muscle Matters</h2>
+                    </div>
+
+                    <div id="header-cont-1-middle">
+                        <a href="" class="active">Home</a>
+                        <a href="">About Us</a>
+                        <a href="">Services</a>
+                        <a href="">Locations</a>
+                    </div>
+
+                    <div id="header-cont-1-right">
+
+                        <div class="dropdown">
+                            <button id="dropdown-button">See More <i class="fa-solid fa-caret-down"></i></button>
+                            <div class="dropdown-menu">
+                                <a href="">mail us</a>
+                                <a href="">Book Now</a>
+                                <a href="">Become a member</a>
+                            </div>
+                        </div>
+
+                        <div class="menu-btn-container">
+                            <button id="menu-btn">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                </header>
+
+            </div>
+
+
+            <div class="main-contain">
+
+                <main>
+    
+                    
+
+                </main>
+
+            </div>
+
+
+            <div class="footer-container">
+                <footer>
+
+                    <div class="flex-child">
+                        <h3>contacts</h3>
+                        <div class="footer-links">
+                            <a href="tel:0833537975">+27 83 353 7975 <i class="fa-solid fa-phone"></i></a>
+                            <a href="mailto:anxumalo000@gmail.com">anxumalo000@gmail.com <i class="fa-solid fa-envelope"></i></a>
+                            <a href="tel:0674556903">+27 67 455 6903 <i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="">South Africa, Dannhauser, 3080, Nelly Valley <i class="fa-solid fa-building"></i></a>
+                            <a></a>
+
+                        </div>
+                    </div>
+
+                    <div class="flex-child">
+                        <h3>quick links</h3>
+                        <div class="footer-links">
+                          
+                            <a href="">Home <i class="fa-solid fa-angle-right"></i></a>
+                            <a href="">About Us <i class="fa-solid fa-angle-right"></i></a>
+                            <a href="">Services <i class="fa-solid fa-angle-right"></i></a>
+                            <a href="">Locations <i class="fa-solid fa-angle-right"></i></a>
+
+                        </div>
+                    </div>
+
+                    <div class="flex-child">
+                        <h3>see more</h3>
+                        <div class="footer-links">
+                            <a href="">Mail Us <i class="fa-solid fa-angle-right"></i></a>
+                            <a href="">Book Now <i class="fa-solid fa-angle-right"></i></a>
+                            <a href="">Become A Member <i class="fa-solid fa-angle-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="flex-child">
+                        <h3>about</h3>
+                        <div class="footer-links">
+                            <a href="">Terms of Use <i class="fa-solid fa-angle-right"></i></a>
+                            <a href="">Privacy Policy <i class="fa-solid fa-angle-right"></i></a>
+                            <a href="">Licence <i class="fa-solid fa-angle-right"></i></a>
+                            <a href="">Cookies Policy <i class="fa-solid fa-angle-right"></i></a>
+                        </div>
+                    </div>
+
+                </footer>
+            </div>
+
+        </div>
+
+        <script>
+            
+            function searchResults(){
+                const searchInput = document.getElementById("search-link-input")
+                const searchValue = searchInput.value.toUpperCase()
+                const searchLinks = document.getElementById("search-links")
+                const li = searchLinks.getElementsByTagName("li")
+                let i;
+                for (i = 0;i < li.length;i++){
+                    const a = li[i].getElementsByTagName('a')[0]
+                    if (a.innerHTML.toUpperCase().indexOf(searchValue) > -1){
+                        li[i].style.display = 'block'
+                    }else{
+                        li[i].style.display = 'none'
+                    }
+                }
+            }
+
+
+        </script>
+
+    </body>
+
+    <script src="./scripts/shared-script.js"></script>
+
+
+</html>
