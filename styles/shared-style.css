@@ -4,6 +4,8 @@ body{
     font-family:Lora;
 }
 
+
+
 #slide-menu{
     position:fixed;
     top:0;
@@ -73,6 +75,7 @@ body{
     position:fixed;
     width:100%;
     top:0;
+    z-index:8;
 }
 
 #header-cont-1{
@@ -84,9 +87,6 @@ body{
 }
 
 
-#header-cont-2{
-
-}
 
 #header-cont-1-left{
     grid-column-start:1;
