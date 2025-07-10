@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Muscle Matters</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../styles/shared-style.css">
+        <link rel="stylesheet" href="../styles/services.css">
+
+        <script src="https://kit.fontawesome.com/a2dd159b70.js" crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Italianno&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Pathway+Gothic+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <section id="slide-menu">
+            <button id="close-btn"><i class="fa-solid fa-xmark"></i></button>
+            <form autocomplete="off">
+                <input type="text" name="search-links"  placeholder="Search..." id="search-link-input" onkeyup="searchResults()">
+                <ul id="search-links">
+
+                    <li><a href="./about.html#mission">Mission</a></li>
+                    <li><a href="./about.html#vision">Vision</a></li>
+                    <li><a href="./services.html#prices">Prices</a></li>
+                    <li><a href="./about.html#founder">Founder</a></li>
+                    <li><a href="./locations.html#headquarters">Headquarters</a></li>
+                    <li><a href="./services.html#plans">Plans</a></li>
+                    <li><a href="./about.html#team">Team</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./locations.html">Locations</a></li>
+                    <li><a href="./about.html">About</a></li>
+
+                </ul>
+            </form>
+        </section>
+
+        <div class="web-layout">
+
+            <div class="header-container" id="header-container">
+
+                <header id="header-cont-1">
+
+                    <div id="header-cont-1-left">
+                        <h2>Muscle Matters</h2>
+                    </div>
+
+                    <div id="header-cont-1-middle">
+                        <a href="../index.html">Home</a>
+                        <a href="./about.html">About Us</a>
+                        <a href="./services.html" class="active">Services</a>
+                        <a href="./locations.html">Locations</a>
+                    </div>
+
+                    <div id="header-cont-1-right">
+
+                        <div class="dropdown">
+                            <button id="dropdown-button">See More <i class="fa-solid fa-caret-down"></i></button>
+                            <div class="dropdown-menu">
+                                <a href="./mail-us.html">mail us</a>
+                                <a href="./booking.html">Book Now</a>
+                                <a href="./membership.html">Become a member</a>
+                            </div>
+                        </div>
+
+                        <div class="menu-btn-container">
+                            <button id="menu-btn">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                </header>
+
+            </div>
+
+
+            <div class="main-contain">
+
+                <main>
+    
+                    <section class="hero-sec-services">
+
+                        <div class="hero-sec-services-child">
+
+                            <div>
+                                <h2>we offer different and a vast diversity of services</h2>
+                                <h2>Check them out</h2>
+                            </div>
+                        
+                        </div>
+
+                    </section>
+
+                    <section id="services-list">
+
+                        <div class="service-slide" id="plans">
+                            <div class="service-img-container">
+                                <img src="https://images.pexels.com/photos/8611297/pexels-photo-8611297.jpeg">
+                            </div>
+                            <div class="service-des">
+                                <h3>the art of equipment</h3>
+                                <p>we offer high quality utilies for all strengths.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-slide">
+                            <div class="service-img-container">
+                                <img src="https://images.pexels.com/photos/8436595/pexels-photo-8436595.jpeg">
+                            </div>
+                            <div class="service-des">
+                                <h3>group classes</h3>
+                                <p>we provide well coordinated classes for all people to fit.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-slide">
+                            <div class="service-img-container">
+                                <img src="https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg">
+                            </div>
+                            <div class="service-des">
+                                <h3>personal trainers</h3>
+                                <p>Maximize your workout with our top ranked specialists as personal trainer for you</p>
+                            </div>
+                        </div>
+
+                        <div class="service-slide">
+                            <div class="service-img-container">
+                                <img src="https://images.pexels.com/photos/3865792/pexels-photo-3865792.jpeg">
+                            </div>
+                            <div class="service-des">
+                                <h3>spa service</h3>
+                                <p>Relieve your fatigue with a good spa service after tiresome workout.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-slide">
+                            <div class="service-img-container">
+                                <img src="https://images.pexels.com/photos/97047/pexels-photo-97047.jpeg">
+                            </div>
+                            <div class="service-des">
+                                <h3>pool</h3>
+                                <p>nothing cooler than a dip in a pool to ease relaxation.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-slide">
+                            <div class="service-img-container">
+                                <img src="https://images.pexels.com/photos/3776204/pexels-photo-3776204.jpeg">
+                            </div>
+                            <div class="service-des">
+                                <h3>childcare</h3>
+                                <p>worry less about stress of finding nanny, gym takes care of that.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-slide">
+                            <div class="service-img-container">
+                                <img src="https://images.pexels.com/photos/1332313/pexels-photo-1332313.jpeg">
+                            </div>
+                            <div class="service-des">
+                                <h3>salad dressing</h3>
+                                <p>we offer a high grade good for gym enthusiasts different salads.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-slide">
+                            <div class="service-img-container">
+                                <img src="https://images.pexels.com/photos/30834961/pexels-photo-30834961.jpeg">
+                            </div>
+                            <div class="service-des">
+                                <h3>locker rooms</h3>
+                                <p>free locker rooms which prioritize safety for items and properties.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-slide">
+                            <div class="service-img-container">
+                                <img src="https://images.pexels.com/photos/3067481/pexels-photo-3067481.jpeg">
+                            </div>
+                            <div class="service-des">
+                                <h3>zoning area</h3>
+                                <p>free space to relax your mind free off noise.</p>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section class="prices-sec">
+                        <h2>Prices</h2>
+                        <div class="price-table-cont">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Service Name</th>
+                                        <th>Service Price</th>
+                                        <th>Service Standard</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td>the art of equipment</td>
+                                        <td>r 1000,34</td>
+                                        <td>high</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>personal trainer</td>
+                                        <td>r 2589,55</td>
+                                        <td>high</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>spa service</td>
+                                        <td>r 980,99</td>
+                                        <td>medium</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>out of the box</td>
+                                        <td>r 5000,45</td>
+                                        <td>high</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>all</td>
+                                        <td>r 10 000,00</td>
+                                        <td>high</td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <br>
+                </main>
+
+            </div>
+
+
+            <div class="footer-container">
+                <footer>
+
+                    <div class="flex-child">
+                        <h3>contacts</h3>
+                        <div class="footer-links">
+                            <a href="tel:0833537975">+27 83 353 7975 <i class="fa-solid fa-phone"></i></a>
+                            <a href="mailto:anxumalo000@gmail.com">anxumalo000@gmail.com <i class="fa-solid fa-envelope"></i></a>
+                            <a href="tel:0674556903">+27 67 455 6903 <i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="./locations.html#headquarters">South Africa, Dannhauser, 3080, Nelly Valley <i class="fa-solid fa-building"></i></a>
+
+                        </div>
+                    </div>
+
+                    <div class="flex-child">
+                        <h3>quick links</h3>
+                        <div class="footer-links">
+                          
+                            <a href="../index.html">Home <i class="fa-solid fa-angle-right"></i></a>
+                            <a href="./about.html">About Us <i class="fa-solid fa-angle-right"></i></a>
+                            <a href="./services.html">Services <i class="fa-solid fa-angle-right"></i></a>
+                            <a href="./locations.html">Locations <i class="fa-solid fa-angle-right"></i></a>
+
+                        </div>
+                    </div>
+
+                    <div class="flex-child">
+                        <h3>see more</h3>
+                        <div class="footer-links">
+                            <a href="./mail-us.html">Mail Us <i class="fa-solid fa-angle-right"></i></a>
+                            <a href="./booking.html">Book Now <i class="fa-solid fa-angle-right"></i></a>
+                            <a href="./membership.html">Become A Member <i class="fa-solid fa-angle-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="flex-child">
+                        <h3>about</h3>
+                        <div class="footer-links">
+                            <a href="">Terms of Use <i class="fa-solid fa-angle-right"></i></a>
+                            <a href="">Privacy Policy <i class="fa-solid fa-angle-right"></i></a>
+                            <a href="">Licence <i class="fa-solid fa-angle-right"></i></a>
+                            <a href="">Cookies Policy <i class="fa-solid fa-angle-right"></i></a>
+                        </div>
+                    </div>
+
+                </footer>
+            </div>
+
+        </div>
+
+        <script>
+            
+            function searchResults(){
+                const searchInput = document.getElementById("search-link-input")
+                const searchValue = searchInput.value.toUpperCase()
+                const searchLinks = document.getElementById("search-links")
+                const li = searchLinks.getElementsByTagName("li")
+                let i;
+                for (i = 0;i < li.length;i++){
+                    const a = li[i].getElementsByTagName('a')[0]
+                    if (a.innerHTML.toUpperCase().indexOf(searchValue) > -1){
+                        li[i].style.display = 'block'
+                    }else{
+                        li[i].style.display = 'none'
+                    }
+                }
+            }
+
+
+        </script>
+
+    </body>
+
+    <script src="../scripts/shared-script.js"></script>
+
+
+</html>
