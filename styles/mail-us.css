@@ -1,0 +1,66 @@
+#mail-us-first-sec{
+    height:100vh;
+    width:98%;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+input[type="text"],input[type="email"]{
+    width:100%;
+    box-sizing:border-box;
+    padding:1rem .2rem;
+    border-radius:1rem;
+    border:2px solid black;
+    outline:none;
+}
+
+input[type='submit']{
+    background-color:black;
+    color:white;
+    padding:.7rem 2rem;
+    border-radius:1rem;
+    border:none;
+    cursor:pointer;
+    transition:.2s;
+}
+
+input[type='submit']:hover{
+    box-shadow:2px 5px 3px rgb(73, 73, 73);
+}
+
+form{
+    text-align:center;
+}
+
+@media screen and (min-width:700px){
+
+
+
+    input[type='text']{
+        width:70%;
+    }
+    input[type="email"]{
+        width:70%;
+    }
+}
+
+
+@media screen and (min-width:800px){
+    
+    input[type="text"]{
+        width:60%;
+    }
+
+    input[type='email']{
+        width:60%;
+    }
+
+}
+
+@media screen and (min-width:1000px){
+    input[type="text"],input[type="email"]{
+        width:50%;
+    }
+}
