@@ -1,0 +1,63 @@
+#member-form-sec{
+    margin:5rem auto 0;
+    width:95%;
+    border:1px solid black;
+    padding:0 .4rem 1.5rem;
+    animation-name:formSlide;
+    animation-duration:1s;
+}
+
+@keyframes formSlide{
+    from{transform:scale(.5,.5);opacity:.5}
+    to{transform:scale(1,1);opacity:1}
+}
+
+#member-form-sec h2{
+    background-color:black;
+    color:white;
+    padding:1rem 0;
+}
+
+.common-input{
+    width:100%;
+    box-sizing:border-box;
+    padding:.7rem .2rem;
+    border-radius:.5rem;
+    border:1px solid black;
+
+}
+
+input[type='file']{
+    display:none;
+}
+
+.file-label{
+    background-color:green;
+    width:100%;
+    display:block;
+    padding:.7rem .2rem;
+    color:white;
+    border-radius:.5rem;
+    box-sizing:border-box;
+}
+
+form button{
+    padding:.7rem 1rem;
+    border-radius:.5rem;
+    border:none;
+    cursor:pointer;
+}
+
+button[type='reset']{
+    background-color:red;
+}
+
+button[type='submit']{
+    background-color:green;
+}
+
+@media screen and (min-width:800px){
+    #member-form-sec{
+        width:70%;
+    }
+}
