@@ -34,6 +34,16 @@ form{
     text-align:center;
 }
 
+form p{
+    margin:0;
+}
+
+#fname-warning,#lname-warning,#email-warning{
+    color:red;
+    font-weight:bolder;
+    display:none;
+}
+
 @media screen and (min-width:700px){
 
 
@@ -45,7 +55,6 @@ form{
         width:70%;
     }
 }
-
 
 @media screen and (min-width:800px){
     

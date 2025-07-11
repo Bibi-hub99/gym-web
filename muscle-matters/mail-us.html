@@ -94,18 +94,19 @@
                             <br>
                             <br>
                             <input type="text" name="fname" id="fname">
-                            <br>
+                            <p id="fname-warning">love you</p>
                             <br>
                             <label>Last Name</label>
                             <br>
                             <br>
                             <input type="text" name="lname" id="lname">
-                            <br>
+                            <p id="lname-warning">ss</p>
                             <br>
                             <label>Email</label>
                             <br>
                             <br>
                             <input type="email" name="email" id="email">
+                            <p id="email-warning">s</p>
                             <br>
                             <br>
                             <input type="submit">
@@ -187,12 +188,20 @@
 
             const validateFname = ()=>{
                 const input = document.getElementById("fname").value
+                const fnameWarning = document.getElementById("fname-warning")
+
                 if(input.trim()===""){
-                    console.log('enter name')
+
+                    fnameWarning.style.display = 'block'
+                    fnameWarning.innerHTML = 'enter name'
                     return false
+
                 }else if(input.match(/[0-9]/g)){
-                    console.log('no numbers')
+
+                    fnameWarning.style.display = 'block'
+                    fnameWarning.innerHTML = 'name must not have numbers'
                     return false
+
                 }else{
                     return true
                 }
@@ -200,27 +209,115 @@
 
             const validateLname = ()=>{
                 const input = document.getElementById("lname").value
+                const lnameWarning = document.getElementById("lname-warning")
+
                 if(input.trim()==""){
-                    console.log('enter surname')
+
+                    lnameWarning.style.display = 'block'
+                    lnameWarning.innerHTML = 'enter your last name'
                     return false
+
                 }else if(input.match(/[0-9]/g)){
-                    console.log('no numbers')
+
+                    lnameWarning.style.display = 'block'
+                    lnameWarning.innerHTML = 'last name must not have any numbers'
+                    return false
+
                 }else {
                     return true
                 }
             }
 
             const validateEmail = ()=>{
-                const input = document.getElementById("")    
+
+                const input = document.getElementById("email").value
+                const emailWarning = document.getElementById("email-warning")
+
+                if(input.trim()==""){
+
+                    emailWarning.style.display = 'block'
+                    emailWarning.innerHTML = 'enter your email'
+                    return false
+
+                }else if(!input.endsWith('@gmail.com')){
+
+                    emailWarning.style.display = 'block'
+                    emailWarning.innerHTML = 'email must end with @gmail.com'
+                    return false
+
+                }else if(!isNaN(input.at(0))){
+
+                    emailWarning.style.display = 'block'
+                    emailWarning.innerHTML = 'email cannot begin with numbers'
+                    return false
+
+                }
+                return true;
             }
 
-            const validateData = () => {
-                if(validateFname()){
-                    if(validateLname()){
-                        return true
-                    }else{
-                        return false
+            const nameInput = document.getElementById("fname")
+            const lnameInput = document.getElementById("lname")
+            const emailInput = document.getElementById("email")
+
+            nameInput.onkeyup = function(){
+
+                const nameInputValue = nameInput.value
+                const nameWarning = document.getElementById('fname-warning')
+
+                if(nameWarning.style.display === 'block'){
+                    if(validateFname()){
+                        nameWarning.style.display = 'none'
                     }
+                }
+
+            }
+
+            lnameInput.onkeyup = function(){
+
+                const lnameInputValue = lnameInput.value
+                const lnameWarning = document.getElementById('lname-warning')
+
+                if(lnameWarning.style.display === 'block'){
+                    if(validateLname()){
+                        lnameWarning.style.display = 'none'
+                    }
+                }
+
+            }
+
+            emailInput.onkeyup = function(){
+                
+                const emailInputValue = emailInput.value
+                const emailWarning = document.getElementById('email-warning')
+
+                if(emailWarning.style.display === 'block'){
+                    if(validateEmail()){
+                        emailWarning.style.display = 'none'
+                    }
+                }
+
+            }            
+
+            const validateData = () => {
+
+                if(validateFname()){
+
+                    if(validateLname()){
+
+                        if(validateEmail()){
+                            return true
+                        }else{
+                            return false
+                        }
+
+                        return false
+
+                    }else{
+
+                        return false
+
+                    }
+
                 }else{
                     return false
                 }
