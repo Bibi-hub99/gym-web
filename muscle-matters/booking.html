@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="../styles/shared-style.css">
+        <link rel="stylesheet" href="../styles/booking.css">
 
         <script src="https://kit.fontawesome.com/a2dd159b70.js" crossorigin="anonymous"></script>
 
@@ -51,7 +52,7 @@
                     </div>
 
                     <div id="header-cont-1-middle">
-                        <a href="../index.html" class="active">Home</a>
+                        <a href="../index.html">Home</a>
                         <a href="./about.html">About Us</a>
                         <a href="./services.html">Services</a>
                         <a href="./locations.html">Locations</a>
@@ -86,7 +87,57 @@
 
                 <main>
     
+
+
+                    <section id="form-title-sec">
+                        <h2>Fill your details</h2>
+                    </section>   
                     
+                    <section id="form-data-sec">
+
+                        <form name="booking-form" method="post" enctype="multipart/form-data" autocomplete="off">
+                            <p style="margin:0;">personal information:</p>
+                            <hr>
+                            <input type="text" name="fname" id="fname" placeholder="First Names" required minlength="1" maxlength="20">
+                            <br>
+                            <br>
+                            <br>
+                            <input type="text" name="lname" id="lname" placeholder="Last Name" required minlength="1" maxlength="20">
+                            <br>
+                            <br>
+                            <br>
+                            <input type="tel" name="telephone" id="telephone" placeholder="083-459-5560" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                            <br>
+                            <br>
+                            <br>
+                            <input type="email" name="email" id="email" placeholder="example123@gmail.com" minlength="15" maxlength="25" required>
+                            <br>
+                            <br>
+                            <br>
+                            <select name="location" required>
+                                <option>--Select Location--</option>
+                                <option value="DURBAN">DURBAN</option>
+                                <option value="BHISHO">BHISHO</option>
+                                <option value="BLOEMFONTEIN">BLOEMFONTEIN</option>
+                                <option value="JOHANNESBURG">JOHANNESBURG</option>
+                                <option value="POLOKWANE">POLOKWANE</option>
+                                <option value="MBOMBELA">MBOMBELA</option>
+                                <option value="KIMBERLEY">KIMBERLEY</option>
+                                <option value="MAHIKENG">MAHIKENG</option>
+                                <option value="CAPE-TOWN">CAPE TOWN</option>
+
+                            </select>
+                            <br>
+                            <br>
+                            <br>
+                            <input type="date" name="date" id="date" min="2025-07-12" max="2025-12-31" required>
+                            <br>
+                            <br>
+                            <br>
+                            <button type="submit" id='submit-btn'>Send <i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+
+                    </section>
 
                 </main>
 

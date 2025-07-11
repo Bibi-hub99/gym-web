@@ -5,15 +5,17 @@
     display:flex;
     flex-direction:column;
     justify-content:center;
+    padding-top:2rem;
 }
 
 input[type="text"],input[type="email"]{
     width:100%;
     box-sizing:border-box;
-    padding:1rem .2rem;
-    border-radius:1rem;
-    border:2px solid black;
+    padding:.7rem .2rem;
+    border-radius:.5rem;
+    border:1px solid black;
     outline:none;
+    font-size:1rem;
 }
 
 input[type='submit']{
@@ -44,32 +46,40 @@ form p{
     display:none;
 }
 
+textarea{
+    width:100%;
+    box-sizing:border-box;
+    border-radius:.5rem;
+    border:1px solid black;
+    outline:none;
+    resize:none;
+    padding:.5 .5rem;
+    font-size:1.2rem;
+}
+
+label{
+    letter-spacing:1px;
+    word-spacing:2px;
+}
+
 @media screen and (min-width:700px){
 
-
-
-    input[type='text']{
+    input[type='text'],input[type='email'],textarea{
         width:70%;
     }
-    input[type="email"]{
-        width:70%;
-    }
+    
 }
 
 @media screen and (min-width:800px){
     
-    input[type="text"]{
-        width:60%;
-    }
-
-    input[type='email']{
+    input[type="text"],input[type='email'],textarea{
         width:60%;
     }
 
 }
 
 @media screen and (min-width:1000px){
-    input[type="text"],input[type="email"]{
+    input[type="text"],input[type="email"],textarea{
         width:50%;
     }
 }
